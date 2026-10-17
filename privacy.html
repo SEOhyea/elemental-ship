@@ -28,8 +28,8 @@
 <h2>1. 수집하는 개인정보</h2>
 <ul>
 <li>Google로 로그인하는 경우: Google 계정 이메일 주소, Google 계정 고유번호(로그인 확인용)</li>
-<li>게임 이용 중 만들어지는 정보: 함장 이름, 승·패와 경기 수, 경기 기록(모드 · 진영 · 함선 · 레벨 · 격파 · 격침 · 경기 시간), 진영전 MMR · 칭호 · 진영 기여</li>
-<li>이 기기에만 저장되는 정보: 로그인 열쇠, 설정, 최근 함께한 플레이어 이름, 꾸미기 착용 정보</li>
+<li>게임 이용 중 만들어지는 정보: 함장 이름, 승·패와 경기 수, 경기 기록(모드 · 진영 · 함선 · 레벨 · 격파 · 격침 · 경기 시간 · 그 판에 받은 진주와 경험치), 진영전 MMR · 칭호 · 진영 기여, 게임 진행(진주 · 함장 레벨과 경험치 · 연승 · 승리카드 · 가진 꾸미기와 착용 · 받은 시즌 보상)</li>
+<li>이 기기에만 저장되는 정보: 로그인 열쇠, 설정, 최근 함께한 플레이어 이름, 메달 착용 정보</li>
 <li>친구 기능을 쓰는 경우: 공개 프로필(함장 이름 · 레벨 · MMR · 승패 · 마지막 접속 시각), 친구 목록 · 받은 친구 요청 · 차단 목록. 구글 함장의 이름은 같은 이름을 막기 위해 이름 명부에도 저장됩니다</li>
 <li>친구 · 그룹과 대화하는 경우: 주고받은 글(80자까지)과 보낸 시각 · 그룹을 쓰는 경우: 그룹 멤버 목록과 함장 이름, 받은 그룹 초대</li>
 <li>신고하는 경우: 신고한 함장 · 신고 대상 함장 · 이유 · 신고한 글</li>
@@ -38,13 +38,14 @@
 <h2>2. 이용 목적</h2>
 <ul>
 <li>로그인과 본인 확인</li>
-<li>전적 · 경기 기록 · 진영전 점수의 저장과 표시</li>
+<li>전적 · 경기 기록 · 진영전 점수 · 게임 진행(진주 · 레벨 · 승리카드 · 꾸미기)의 저장과 표시</li>
 <li>여러 기기에서 같은 함장으로 이어서 플레이</li>
+<li>기록 조작 같은 부정행위 확인</li>
 <li>친구 찾기 · 친구 맺기 · 친구의 접속 상태 표시 · 친구 · 그룹 대화 · 신고 처리 (욕설 · 괴롭힘 등)</li>
 </ul>
 <h2>3. 보관 장소와 기간</h2>
 <ul>
-<li>함장 이름 · 전적 · 경기 기록 · 진영전 정보: Google Firebase Firestore (서울 지역)</li>
+<li>함장 이름 · 전적 · 경기 기록 · 진영전 정보 · 게임 진행: Google Firebase Firestore (서울 지역)</li>
 <li>로그인 정보(이메일 · 고유번호): Google Firebase 인증 (Google의 전 세계 서버)</li>
 <li>보관 기간: 회원이 계정을 삭제할 때까지. 계정을 삭제하면 지체 없이 파기합니다.</li>
 <li>진영전 점수는 진영별 합계(숫자)만 남으며 개인을 알아볼 수 없습니다.</li>
@@ -94,8 +95,8 @@
 <h2>1. Information we collect</h2>
 <ul>
 <li>If you sign in with Google: your Google account email address and Google account ID (to verify sign-in)</li>
-<li>Information created while playing: captain name, wins, losses and number of matches, match records (mode, faction, ship, level, kills, deaths, match time), faction war MMR, title and faction contribution</li>
-<li>Information stored only on your device: sign-in key, settings, names of players you recently played with, equipped cosmetics</li>
+<li>Information created while playing: captain name, wins, losses and number of matches, match records (mode, faction, ship, level, kills, deaths, match time, pearls and XP earned in that match), faction war MMR, title and faction contribution, game progress (pearls, captain level and XP, win streaks, victory cards, owned and equipped cosmetics, season rewards received)</li>
+<li>Information stored only on your device: sign-in key, settings, names of players you recently played with, equipped medal</li>
 <li>If you use friends: public profile (captain name, level, MMR, wins/losses, last online time), friends list, received friend requests and block list. Captain names of Google captains are also stored in a name registry to prevent duplicate names</li>
 <li>If you chat with friends or groups: messages you send (up to 80 characters) and the time sent. If you use groups: group member list with captain names, and received group invites</li>
 <li>If you report: the reporting captain, the reported captain, the reason and the reported message</li>
@@ -104,13 +105,14 @@
 <h2>2. How we use it</h2>
 <ul>
 <li>Sign-in and identity verification</li>
-<li>Saving and showing records, match history and faction war scores</li>
+<li>Saving and showing records, match history, faction war scores and game progress (pearls, level, victory cards, cosmetics)</li>
 <li>Continuing as the same captain on multiple devices</li>
+<li>Detecting cheating such as tampered records</li>
 <li>Finding friends, adding friends, showing friends' online status, friend and group chat, and handling reports (abuse, harassment, etc.)</li>
 </ul>
 <h2>3. Where and how long we keep it</h2>
 <ul>
-<li>Captain name, records, match history and faction war data: Google Firebase Firestore (Seoul region)</li>
+<li>Captain name, records, match history, faction war data and game progress: Google Firebase Firestore (Seoul region)</li>
 <li>Sign-in data (email, account ID): Google Firebase Authentication (Google's global servers)</li>
 <li>Retention: until you delete your account. When you delete your account, we delete it without delay.</li>
 <li>Faction war scores remain only as per-faction totals (numbers) that cannot identify individuals.</li>
