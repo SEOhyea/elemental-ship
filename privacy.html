@@ -5,7 +5,7 @@
   :root { --bg: #f4f7fa; --card: #ffffff; --ink: #18222d; --dim: #5a6a7b; --line: #dde4ec; --accent: #1b6fd1; }
   @media (prefers-color-scheme: dark) { :root { --bg: #0b1520; --card: #111e2b; --ink: #e6eef6; --dim: #9fb0c2; --line: #223345; --accent: #6fb6ff; } }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.75 "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.75 "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif; word-break: keep-all; overflow-wrap: anywhere; }   /* 10/18 한국어는 낱말 단위로 줄바꿈 */
   header { background: var(--card); border-bottom: 1px solid var(--line); }
   .bar { max-width: 860px; margin: 0 auto; padding: 14px 16px; display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
   .brand { font-weight: 800; letter-spacing: .02em; margin-right: auto; color: var(--ink); text-decoration: none; }
