@@ -23,7 +23,7 @@
 <p class="lang">한국어 · <a href="#en">English below</a></p>
 <section class="doc" lang="ko">
 <h1>엘리멘탈 쉽 개인정보 처리방침</h1>
-<p>시행일: 2026년 10월 21일</p>
+<p>시행일: 2026년 10월 22일</p>
 <p>Elemental Ship 운영팀(이하 "운영자")은 엘리멘탈 쉽(이하 "게임") 이용자의 개인정보를 소중히 여기며, 「개인정보 보호법」 등 관련 법령을 지킵니다.</p>
 <h2>1. 수집하는 개인정보</h2>
 <ul>
@@ -32,7 +32,7 @@
 <li>게임 이용 중 만들어지는 정보: 함장 이름, 승·패와 경기 수, 경기 기록(모드 · 진영 · 함선 · 레벨 · 격파 · 격침 · 경기 시간 · 그 판에 받은 진주와 경험치), 진영전 MMR · 칭호 · 진영 기여, 게임 진행(진주 · 함장 레벨과 경험치 · 연승 · 승리카드 · 가진 꾸미기와 착용 · 받은 시즌 보상)</li>
 <li>이 기기에만 저장되는 정보: 로그인 열쇠, 설정, 최근 함께한 플레이어 이름, 메달 착용 정보</li>
 <li>친구 기능을 쓰는 경우: 공개 프로필(함장 이름 · 레벨 · MMR · 승패 · 마지막 접속 시각), 친구 목록 · 받은 친구 요청 · 차단 목록. 구글 · 게임 계정 함장의 이름은 같은 이름을 막기 위해 이름 명부에도 저장됩니다</li>
-<li>친구 · 그룹과 대화하는 경우: 주고받은 글(80자까지)과 보낸 시각 · 그룹을 쓰는 경우: 그룹 멤버 목록과 함장 이름, 받은 그룹 초대</li>
+<li>친구 · 그룹 · 진영 채팅으로 대화하는 경우: 주고받은 글(80자까지)과 보낸 시각 (진영 채팅은 보낸 함장 이름도) · 그룹을 쓰는 경우: 그룹 멤버 목록과 함장 이름, 받은 그룹 초대</li>
 <li>신고하는 경우: 신고한 함장 · 신고 대상 함장 · 이유 · 신고한 글</li>
 <li>게임은 전화번호, 위치, 연락처, 사진을 수집하지 않으며, 광고와 이용 분석 도구를 쓰지 않습니다. 게임 계정 비밀번호는 Google Firebase 인증에만 보내며, 게임 서버 기록과 이 기기에는 저장하지 않습니다.</li>
 </ul>
@@ -42,7 +42,7 @@
 <li>전적 · 경기 기록 · 진영전 점수 · 게임 진행(진주 · 레벨 · 승리카드 · 꾸미기)의 저장과 표시</li>
 <li>여러 기기에서 같은 함장으로 이어서 플레이</li>
 <li>기록 조작 같은 부정행위 확인</li>
-<li>친구 찾기 · 친구 맺기 · 친구의 접속 상태 표시 · 친구 · 그룹 대화 · 신고 처리 (욕설 · 괴롭힘 등)</li>
+<li>친구 찾기 · 친구 맺기 · 친구의 접속 상태 표시 · 친구 · 그룹 · 진영 대화 · 신고 처리 (욕설 · 괴롭힘 등)</li>
 </ul>
 <h2>3. 보관 장소와 기간</h2>
 <ul>
@@ -51,7 +51,7 @@
 <li>보관 기간: 회원이 계정을 삭제할 때까지. 계정을 삭제하면 지체 없이 파기합니다.</li>
 <li>진영전 점수는 진영별 합계(숫자)만 남으며 개인을 알아볼 수 없습니다.</li>
 <li>이름 명부 · 공개 프로필 · 친구 목록 · 요청 · 차단: Google Firebase Firestore (서울 지역). 함장 이름과 공개 프로필은 로그인한 다른 함장이 볼 수 있습니다 (이메일 · 고유번호는 보이지 않습니다).</li>
-<li>대화 글 · 그룹: Google Firebase Firestore (서울 지역). 대화 글은 대화방을 열 때와 게임을 켤 때 그 대화방의 최근 100개를 넘거나 30일이 지난 글부터 지워집니다. 아무도 열지 않는 대화방의 글은 남아 있을 수 있습니다. 그룹의 마지막 사람이 나가면 그룹과 그룹 대화가 지워집니다. 계정을 삭제하면 내가 보낸 글(1:1 · 그룹)이 지워지고 그룹에서 나갑니다.</li>
+<li>대화 글 · 그룹: Google Firebase Firestore (서울 지역). 대화 글은 대화방을 열 때와 게임을 켤 때 그 대화방의 최근 100개를 넘거나 30일이 지난 글부터 지워집니다. 아무도 열지 않는 대화방의 글은 남아 있을 수 있습니다. 그룹의 마지막 사람이 나가면 그룹과 그룹 대화가 지워집니다. 계정을 삭제하면 내가 보낸 글(1:1 · 그룹 · 진영)이 지워지고 그룹에서 나갑니다. 진영 채팅 글은 시즌(1주)마다 새 대화방에 모이고, 그 시즌이 끝나면 게임에서 보이지 않습니다 (신고 처리를 위해 서버에는 남을 수 있습니다).</li>
 <li>신고: Google Firebase Firestore (서울 지역). 운영자만 볼 수 있고, 검토가 끝나면 지웁니다 (최대 1년).</li>
 </ul>
 <h2>4. 처리 위탁 및 국외 이전</h2>
@@ -71,7 +71,7 @@
 <h2>6. 안전성 확보 조치</h2>
 <ul>
 <li>모든 전송은 암호화된 연결(HTTPS)로 합니다.</li>
-<li>서버 접근 규칙: 본인만 자기 기록을 읽고 쓸 수 있습니다. 함장 이름 · 공개 프로필만 로그인한 함장이 읽을 수 있고, 친구 요청은 받는 사람만 읽으며, 차단한 함장은 요청을 보낼 수 없습니다. 대화는 두 사람만 읽을 수 있고, 서로 친구일 때만 쓸 수 있습니다. 그룹과 그룹 대화는 그룹 멤버만 읽고 쓸 수 있습니다.</li>
+<li>서버 접근 규칙: 본인만 자기 기록을 읽고 쓸 수 있습니다. 함장 이름 · 공개 프로필만 로그인한 함장이 읽을 수 있고, 친구 요청은 받는 사람만 읽으며, 차단한 함장은 요청을 보낼 수 없습니다. 대화는 두 사람만 읽을 수 있고, 서로 친구일 때만 쓸 수 있습니다. 그룹과 그룹 대화는 그룹 멤버만 읽고 쓸 수 있습니다. 진영 채팅은 그 시즌 같은 진영을 고른 함장만 읽고 쓸 수 있습니다.</li>
 <li>Google 로그인은 Google 로그인 창에서 직접 하므로 게임이 Google 비밀번호를 받지 않습니다. 게임 계정 비밀번호는 암호화된 연결로 Google Firebase 인증에만 보내고, 게임 서버 기록과 이 기기에는 저장하지 않습니다.</li>
 </ul>
 <h2>7. 만 14세 미만 아동</h2>
@@ -91,7 +91,7 @@
 </section>
 <section class="doc" id="en" lang="en">
 <h1>Elemental Ship Privacy Policy</h1>
-<p>Effective date: October 21, 2026</p>
+<p>Effective date: October 22, 2026</p>
 <p>The Elemental Ship Team ("we") values the personal information of Elemental Ship ("the Game") players and complies with applicable laws, including the Personal Information Protection Act of the Republic of Korea.</p>
 <h2>1. Information we collect</h2>
 <ul>
@@ -100,7 +100,7 @@
 <li>Information created while playing: captain name, wins, losses and number of matches, match records (mode, faction, ship, level, kills, deaths, match time, pearls and XP earned in that match), faction war MMR, title and faction contribution, game progress (pearls, captain level and XP, win streaks, victory cards, owned and equipped cosmetics, season rewards received)</li>
 <li>Information stored only on your device: sign-in key, settings, names of players you recently played with, equipped medal</li>
 <li>If you use friends: public profile (captain name, level, MMR, wins/losses, last online time), friends list, received friend requests and block list. Captain names of Google and game-account captains are also stored in a name registry to prevent duplicate names</li>
-<li>If you chat with friends or groups: messages you send (up to 80 characters) and the time sent. If you use groups: group member list with captain names, and received group invites</li>
+<li>If you chat with friends, groups or your faction: messages you send (up to 80 characters) and the time sent (faction chat also shows the sender's captain name). If you use groups: group member list with captain names, and received group invites</li>
 <li>If you report: the reporting captain, the reported captain, the reason and the reported message</li>
 <li>The Game does not collect phone numbers, location, contacts or photos, and does not use advertising or analytics tools. Game account passwords are sent only to Google Firebase Authentication and are never stored in our game records or on your device.</li>
 </ul>
@@ -110,7 +110,7 @@
 <li>Saving and showing records, match history, faction war scores and game progress (pearls, level, victory cards, cosmetics)</li>
 <li>Continuing as the same captain on multiple devices</li>
 <li>Detecting cheating such as tampered records</li>
-<li>Finding friends, adding friends, showing friends' online status, friend and group chat, and handling reports (abuse, harassment, etc.)</li>
+<li>Finding friends, adding friends, showing friends' online status, friend, group and faction chat, and handling reports (abuse, harassment, etc.)</li>
 </ul>
 <h2>3. Where and how long we keep it</h2>
 <ul>
@@ -119,7 +119,7 @@
 <li>Retention: until you delete your account. When you delete your account, we delete it without delay.</li>
 <li>Faction war scores remain only as per-faction totals (numbers) that cannot identify individuals.</li>
 <li>Name registry, public profiles, friends lists, requests and blocks: Google Firebase Firestore (Seoul region). Captain names and public profiles can be seen by other signed-in captains (email and account ID are not shown).</li>
-<li>Messages and groups: Google Firebase Firestore (Seoul region). Messages beyond the latest 100 in a chat, or older than 30 days, are deleted when a member opens the chat or starts the Game. Messages in a chat that no member opens again may remain. When the last member leaves a group, the group and its chat are deleted. When you delete your account, the messages you sent (1:1 and group) are deleted and you leave your group.</li>
+<li>Messages and groups: Google Firebase Firestore (Seoul region). Messages beyond the latest 100 in a chat, or older than 30 days, are deleted when a member opens the chat or starts the Game. Messages in a chat that no member opens again may remain. When the last member leaves a group, the group and its chat are deleted. When you delete your account, the messages you sent (1:1, group and faction) are deleted and you leave your group. Faction chat messages are collected in a new room each season (1 week) and are no longer shown in the Game after that season ends (they may remain on the server for handling reports).</li>
 <li>Reports: Google Firebase Firestore (Seoul region). Only we can see them, and they are deleted after review (up to 1 year).</li>
 </ul>
 <h2>4. Processors and international transfer</h2>
@@ -139,7 +139,7 @@
 <h2>6. Security measures</h2>
 <ul>
 <li>All transfers use encrypted connections (HTTPS).</li>
-<li>Server access rules: only you can read and write your own records. Only captain names and public profiles can be read by signed-in captains, friend requests can be read only by the recipient, and blocked captains cannot send requests. Chats can be read only by the two people in them and written only while you are friends. Groups and group chats can be read and written only by group members.</li>
+<li>Server access rules: only you can read and write your own records. Only captain names and public profiles can be read by signed-in captains, friend requests can be read only by the recipient, and blocked captains cannot send requests. Chats can be read only by the two people in them and written only while you are friends. Groups and group chats can be read and written only by group members. Faction chat can be read and written only by captains who picked that faction for the season.</li>
 <li>Google sign-in happens directly in Google's sign-in window, so we never receive your Google password. Game account passwords are sent over an encrypted connection only to Google Firebase Authentication and are never stored in our game records or on your device.</li>
 </ul>
 <h2>7. Children under 14</h2>
